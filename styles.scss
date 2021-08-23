@@ -1,0 +1,31 @@
+%base-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin page-content($background-color) {
+    @extend %base-layout;
+    background-color: $background-color;
+}
+
+.nav-bar {
+    @include page-content(lightslategrey);
+}
+
+.main-content {
+    @include page-content(white);
+}
+
+.page-title {
+    @extend %base-layout;
+    text-align: center;
+    color: white;
+}
+
+.image-container {
+    width: 20%;
+    height: auto;
+}
+
+// TODO -- note that when using github pages you are essentially committing straight to production so this is the exception to the rule and you SHOULD commit your compiled CSS (not the case otherwise with SASS and LESS)
+// or you can set up Jekyll on your github pages but Olaf recommends the first way
