@@ -19,24 +19,6 @@ konamiSecret.addEventListener('keyboard', function (event) {
     else {
         wipeKonamiCodeLog();
     }
-// // check if letter being typed is the next letter in the code
-//     if (event.key == konamiCode[keystrokes] || konamiCodeLog[0] == konamiCode[keystrokes]) {
-//         // log letter that was typed
-//         if (konamiCodeLog.length() != 1) {
-//             konamiCodeLog.append(konamiCode[keystrokes])
-//         };
-//         // increment keystrokes
-//         keystrokes += 1;
-//         // if keystrokes == 6 then run konami code
-//         if (keystrokes == 6) {
-//             console.log("Konami code initiated!");
-//         }
-//     }
-//     else {
-//         // if wrong letter in code is written
-//         wipeKonamiCodeLog();
-//     }
-//         setTimeout(wipeKonamiCodeLog(), 20000) 
 });
 
 const wipeKonamiCodeLog = () => {
